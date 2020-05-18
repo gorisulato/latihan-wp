@@ -1,0 +1,21 @@
+{
+					"display": "standalone",
+					"orientation": "portrait",
+					"short_name": "Wordpress Test",
+					"name": "Wordpress Test - Just another WordPress site",
+					"start_url": "http://localhost/baklon/?utm_source=homescreen",
+					"theme_color": "#e61937",
+					"background_color": "#e61937",
+					"icons": [
+						{
+						"src": "http://localhost/baklon/wp-content/themes/baklon/favicon.png",
+						"type": "image/png",
+						"sizes": "192x192"
+						},
+						{
+						"src": "http://localhost/baklon/wp-content/themes/baklon/favicon.png",
+						"type": "image/png",
+						"sizes": "512x512"
+						}
+					]
+				}
