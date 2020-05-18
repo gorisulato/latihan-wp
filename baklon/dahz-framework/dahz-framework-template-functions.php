@@ -181,7 +181,13 @@ if ( !function_exists( 'dahz_framework_get_header' ) ) {
 	}
 }
 
-// add_action( 'dahz_framework_header', 'dahz_framework_get_header', 10 );
+if(!function_exists('dahz_framework_header_buildbyparam')){
+	function dahz_framework_header_buildbyparam($x){
+
+		return apply_filters('dahz_framework_header_buildbyparam',$x);
+	}
+}
+ add_action( 'dahz_framework_header', 'dahz_framework_get_header', 50 );
 
 /**
  * 14. dahz_framework_get_footer

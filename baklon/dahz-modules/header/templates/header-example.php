@@ -1,5 +1,10 @@
-<div>
+
+
+<div >
     <h1 >
-        teu jiga react ahh teu rame
+    <?php
+        echo dahz_framework_header_buildbyparam($a);
+    ?>
+      
     </h1>
 </div>

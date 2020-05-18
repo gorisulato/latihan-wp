@@ -12,10 +12,16 @@ if( !class_exists( 'Dahz_Framework_Header' ) ){
 
 			add_action('dahz_framework_header',array($this,'dahz_framework_header_init_figma'));
 
+			add_filter('dahz_framework_header_buildbyparam',array($this,'dahz_framework_header_addfiltertest'));
+
 			add_action( 'dahz_framework_module_header_init', array( $this, 'dahz_framework_header_init' ) );
 
 			add_filter( 'dahz_framework_default_styles', array( $this, 'dahz_framework_header_default_style' ) );
 
+		}
+		public function dahz_framework_header_addfiltertest($bebas)
+		{
+			return $bebas.'Naon We Ajig';
 		}
 
 		public function dahz_framework_header_init_figma(){
@@ -24,7 +30,7 @@ if( !class_exists( 'Dahz_Framework_Header' ) ){
 				"header-example.php",
 	
 				array(
-				
+					'a'=>'Babang Ganteng'
 				),
 	
 				'dahz-modules/header/templates/'
